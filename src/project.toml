@@ -1,0 +1,3 @@
+[[build.env]]
+    name = "GOOGLE_ENTRYPOINT"
+    value = "gunicorn -p :8080 flask_api:app"

@@ -1,0 +1,19 @@
+[run]
+# Include your project directory in the coverage analysis
+source = src .
+
+[report]
+# Exclude certain paths from the coverage report
+omit =
+    */tests/*
+    */python3.7/*  # or whatever version of Python you're using
+    */site-packages/*
+    C:/anaconda3/envs/hackathon/Lib/*
+    */src/webpage.py
+
+# Fail under a certain minimum coverage
+fail_under = 70
+
+[html]
+# Directory where HTML report will be saved
+directory = tests/coverage_html_report/

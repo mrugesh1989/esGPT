@@ -1,0 +1,2 @@
+web: gunicorn main:app
+streamlit: sh setup.sh && streamlit run webpage.py
